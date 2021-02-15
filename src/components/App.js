@@ -31,7 +31,7 @@ const App = ({slids}) => {
     else{
       setnextDesable(false)
     }
-  },[i])
+  },[i,slids])
   function handelReset(){
     setI(0);
   }
