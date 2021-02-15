@@ -38,11 +38,11 @@ const App = () => {
   }
   return (
     <div id="main">
-      <h1 data-testid="title">{slids[i].title}</h1>
-      <p data-testid="text">{slids[i].text}</p>
-      <button onClick={handlePre} data-testid="button-prev" disabled={preDesable}>Prev</button>
-      <button onClick={handleNext} data-testid="button-next" disabled={nextDesable}>Next</button>
-      <button onClick={handelReset}>Restart</button>
+      <h1 data-testid="title" id="title">{slids[i].title}</h1>
+      <p data-testid="text" id="text">{slids[i].text}</p>
+      <button onClick={handlePre} data-testid="button-prev" id="button-prev" disabled={preDesable}>Prev</button>
+      <button onClick={handleNext} data-testid="button-next" id="button-next" disabled={nextDesable}>Next</button>
+      <button onClick={handelReset} data-testid="button-restart" id="button-restart">Restart</button>
     </div>
   );
 }
