@@ -42,7 +42,7 @@ const App = () => {
       <p data-testid="text" id="text">{slids[i].text}</p>
       <button onClick={handlePre} data-testid="button-prev" id="button-prev" disabled={preDesable}>Prev</button>
       <button onClick={handleNext} data-testid="button-next" id="button-next" disabled={nextDesable}>Next</button>
-      <button onClick={handelReset} data-testid="button-restart" id="button-restart">Restart</button>
+      <button onClick={handelReset} data-testid="button-restart" id="button-restart" disabled={preDesable}>Restart</button>
     </div>
   );
 }
