@@ -40,9 +40,9 @@ const App = () => {
     <>
       <h1 data-testid="title">{slids[i].title}</h1>
       <p data-testid="text">{slids[i].text}</p>
-      <button onClick={handlePre} data-testid="button-prev" disabled={preDesable}>prev</button>
-      <button onClick={handleNext} data-testid="button-next" disabled={nextDesable}>next</button><br></br>
-      <button onClick={handelReset}>restart</button>
+      <button onClick={handlePre} data-testid="button-prev" disabled={preDesable}>Prev</button>
+      <button onClick={handleNext} data-testid="button-next" disabled={nextDesable}>Next</button><br></br>
+      <button onClick={handelReset}>Restart</button>
     </>
   );
 }
