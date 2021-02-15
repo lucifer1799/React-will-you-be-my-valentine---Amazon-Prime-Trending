@@ -1,8 +1,7 @@
 import React, {Component, useState,  useEffect} from "react";
 import '../styles/App.css';
 
-import slids from '../data'
-const App = () => {
+const App = ({slids}) => {
   const [i,setI]=useState(0);
   const [preDesable,setPreDesable]=useState(false)
   const [nextDesable,setnextDesable]=useState(false);
