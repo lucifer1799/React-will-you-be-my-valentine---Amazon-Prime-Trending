@@ -37,13 +37,13 @@ const App = () => {
     setI(0);
   }
   return (
-    <>
+    <div id="main">
       <h1 data-testid="title">{slids[i].title}</h1>
       <p data-testid="text">{slids[i].text}</p>
       <button onClick={handlePre} data-testid="button-prev" disabled={preDesable}>Prev</button>
-      <button onClick={handleNext} data-testid="button-next" disabled={nextDesable}>Next</button><br></br>
+      <button onClick={handleNext} data-testid="button-next" disabled={nextDesable}>Next</button>
       <button onClick={handelReset}>Restart</button>
-    </>
+    </div>
   );
 }
 export default App;
